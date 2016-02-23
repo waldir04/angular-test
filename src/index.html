@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="comics">
+  <head>
+    <title>Tienda de Comincs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/normalize.css" >
+    <link rel="stylesheet" href="assets/css/main.css" >
+    <link rel="stylesheet" href="assets/css/responsive.css" >
+  </head>
+  <body>
+
+    <div ui-view></div>
+
+    <script type="text/javascript" src="assets/js/jquery/jquery-1.12.1.js"></script>
+    <script type="text/javascript" src="assets/js/angular/angular.js"></script>
+    <script type="text/javascript" src="assets/js/angular/angular-aria.js"></script>
+    <script type="text/javascript" src="assets/js/angular/angular-cookies.js"></script>
+    <script type="text/javascript" src="assets/js/angular/angular-ui-router.js"></script>
+    <script type="text/javascript" src="assets/js/angular/angular-mocks.js"></script>
+    <script type="text/javascript" src="assets/js/angular/angular-resource.js"></script>
+
+    <script type="text/javascript" src="components/app.js"></script>
+  	<script type="text/javascript" src="components/routes.js"></script>
+    <script type="text/javascript" src="components/backend/mockbackend.js"></script>
+  	<script type="text/javascript" src="components/auth/login/loginController.js"></script>
+    <script type="text/javascript" src="components/auth/register/registerController.js"></script>
+    <script type="text/javascript" src="components/private/privateHeaderController.js"></script>
+    <script type="text/javascript" src="components/comics/list/listController.js"></script>
+    <script type="text/javascript" src="components/comics/search/searchController.js"></script>
+    <script type="text/javascript" src="components/comics/new/newController.js"></script>
+    <script type="text/javascript" src="components/comics/edit/editController.js"></script>
+    <script type="text/javascript" src="components/comics/show/detailController.js"></script>
+    <script type="text/javascript" src="components/services/authService.js"></script>
+    <script type="text/javascript" src="components/services/sessionService.js"></script>
+    <script type="text/javascript" src="components/services/comicService.js"></script>
+    <script type="text/javascript" src="components/services/userModelService.js"></script>
+    <script type="text/javascript" src="components/services/comicModelService.js"></script>
+    <script type="text/javascript" src="components/directives/form.directive.js"></script>
+  </body>
+</html>

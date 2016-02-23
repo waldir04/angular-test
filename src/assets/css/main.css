@@ -1,0 +1,321 @@
+body{
+  font-family: 'Raleway', sans-serif;
+  background-color: #E2E2E2;
+}
+
+section{ padding: 30px 0; }
+
+.text-center{ text-align: center; }
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row{ margin-top: 5px; }
+
+/*::::::::::: HEADER ::::::::::::::*/
+.header-two-bars{ font-size: 13px; }
+
+.header-two-bars .logo{
+  float: left;
+  font: normal 28px 'Kaushan Script', Arial, Helvetica, sans-serif;
+  line-height: 40px;
+  margin: 0;
+}
+
+
+
+.header-two-bars .logo span { color: #bc40df; }
+
+.header-two-bars .header-first-bar{
+  background-color:#222831;
+  box-shadow:0 1px 1px #ccc;
+  height: 80px;
+  color: #ffffff;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+
+.header-two-bars .header-first-bar a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-two-bars .header-first-bar .group-button{
+   float: right;
+   margin: 0;
+}
+
+.header-two-bars .header-first-bar a.action-button {
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 3px;
+  background-color: rgba(58, 60, 62, 0);
+  height: 40px;
+  padding: 10px 20px;
+  border: 1px solid #5E6367;
+  line-height: 40px;
+  box-sizing: border-box;
+}
+
+.header-two-bars .header-second-bar {
+  background-color: #ffffff;
+  box-shadow: 1px 3px 3px 0 #D2D2D2;
+  padding: 10px 0;
+}
+/*::::::::::: /HEADER ::::::::::::::*/
+
+/*:::::::::::::: SEARCH INPUT :::::::::::*/
+.search-box{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.search-box .icon{
+  position: absolute;
+  top: 25%;
+  left: 0;
+  margin-left: 17px;
+  z-index: 1;
+  color: #4f5b66;
+  cursor: pointer;
+}
+
+.search-box input#search{
+  width: 84%;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid #CED2D6;
+  font-size: 10pt;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.search-box input#search::-webkit-input-placeholder { color: #65737e; }
+
+.search-box input#search:-moz-placeholder { color: #65737e; }
+
+.search-box input#search::-moz-placeholder { color: #65737e; }
+
+.search-box input#search:-ms-input-placeholder { color: #65737e; }
+/*:::::::::::::::: /SEARCH INPUT :::::::::::::::::::*/
+
+/*:::::::::::::::::: IMAGE BOX :::::::::::::::::::*/
+.polaroid {
+  position: relative;
+  width: 30%;
+  margin: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.polaroid img {
+  width: 92%;
+  height: 250px;
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #B1B1B1;
+  -moz-box-shadow: 3px 3px 3px #B1B1B1;
+  box-shadow: 3px 3px 3px #B1B1B1;
+}
+
+.polaroid p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  font: 400 18px/1 'Kaushan Script', cursive;
+  color: #888;
+}
+/*:::::::::::::::::: /IMAGE BOX ::::::::::::::::::::::::*/
+
+/*:::::::::::::::::::: BUTTONS :::::::::::::::::::::::::::*/
+.btn {
+  display: inline-block;
+  width: 150px;
+  margin: 0 5px;
+  padding: 10px 50px 12px;
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 3px 3px 3px #B1B1B1;
+}
+
+.btn.sec {
+  color: #FFF;
+  background: #222831;
+}
+.btn.gray{
+  color: #222831;
+  background: #D6D6D6;
+}
+
+.btn.lg{ width: 200px; }
+
+/*::::::::::::::::::: /BUTTONS :::::::::::::::::::::::::::*/
+
+/*:::::::::::::::::::::: DETAILS :::::::::::::::::::::::::*/
+.detail-container{
+  background-color:  #fff;
+  padding: 50px;
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-box-shadow: 3px 3px 3px #B1B1B1;
+  -moz-box-shadow: 3px 3px 3px #B1B1B1;
+  box-shadow: 3px 3px 3px #B1B1B1;
+}
+
+.detail-container .title{
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.detail-container .description{
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.detail-container .image{
+  float: left;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.detail-container .image img{
+  display: block;
+  height: 400px;
+  width: 282px;
+  margin: auto;
+}
+
+.detail-container .image button{ margin-bottom: 0; }
+
+.detail-container p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.comment-container{ border-bottom: 1px solid #CED2D6; }
+
+.comment-container p{
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+/*:::::::::::::::::::::: /DETAILS :::::::::::::::::::::::*/
+
+/*::::::::::::::::::::: LOGIN :::::::::::::::::::::::::*/
+
+.login-container{
+  margin: 0 auto;
+  width: 50%;
+  padding: 40px 0;
+}
+
+.login-container h1{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.login-container label{ font-weight: bold; }
+
+.login-container .form-input{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*:::::::::::::::::::: /LOGIN ::::::::::::::::::::::::*/
+
+/*::::::::::::::::::::: INPUTS :::::::::::::::::::::::::*/
+
+.form-input{
+  display: block;
+  width: 94%;
+  height: 30px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  outline: 0;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+textarea.form-input {
+  height: auto;
+}
+
+.form-input.has-error{ border-color: #C71D1D; }
+
+.group-button{ margin-top: 25px; }
+
+/*:::::::::::::::::::: /INPUTS ::::::::::::::::::::::::*/
+
+
+
+
+nav {
+  float: right;
+  margin-top: 15px;
+}
+
+nav ul, nav li, nav a{
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  overflow: auto;
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav li {
+  height: 20px;
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #aaa;
+  padding: 0 20px;
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 13px;
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+nav li a:hover {
+  color: #bc40df !important;
+}
+
+nav li.active a {
+  font-weight: bold;
+  color: #333;
+}

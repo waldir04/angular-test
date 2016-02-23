@@ -1,0 +1,37 @@
+<main>
+  <section>
+    <div class="container">
+      <div class="detail-container">
+        <h1 class="title">{{comic.name}}</h1>
+        <div class="description">
+          <div class="image">
+            <img ng-src="{{comic.image}}" />
+            <div class="group-button">
+              <button class="btn sec" type="button" ng-click="toEdit()">Editar</button>
+            </div>
+          </div>
+          <p>
+            {{comic.description}}
+          </p>
+        </div>
+        <div>
+          <form name="commentForm" rc-submit="commentPost()" novalidate="">
+            <h3>Comentar:</h3>
+            <textarea name="message" class="form-input" rows="8" ng-model="newcomment.message" ng-class="{'has-error': rc.commentForm.needsAttention(commentForm.message)}" required=""></textarea>
+            <div class="group-button">
+              <button class="btn sec" >Guardar</button>
+            </div>
+          </form>
+        </div>
+        <div>
+          <div class="comment-container" ng-repeat="comment in comic.comments">
+            <h4>{{comment.user}} dice</h4>
+            <p>
+              {{comment.message}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

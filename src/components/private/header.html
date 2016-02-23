@@ -1,0 +1,27 @@
+<header class="header-two-bars">
+  <div class="header-first-bar">
+    <div class="container">
+      <h1 class="logo fix-margin">
+        <a href="#">Company<span>logo</span></a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#/list" >Ver Comics</a></li>
+          <li><a href="#/new" >Añadir Comic</a></li>
+          <li><a href="#" ng-click="logout()">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="header-second-bar">
+    <div class="container">
+      <form ng-submit="search()">
+        <div class="search-box">
+          <span class="icon" ng-click="search()"><i class="fa fa-search" style="height:15px; width:15px; display:block;"></i></span>
+            <input type="search" id="search" placeholder="Buscar..." ng-model="query" required=""/>
+          </div>
+          <input type="submit" style="display:none;">
+        </form>
+      </div>
+    </div>
+  </header>

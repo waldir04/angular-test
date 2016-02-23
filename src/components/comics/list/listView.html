@@ -1,0 +1,13 @@
+<main>
+  <section class="text-center">
+    <div class="container">
+      <div class="polaroid" ng-repeat="comic in comics" ng-click="toDetail(comic.id)">
+        <p>{{comic.name}}</p>
+        <img ng-src="{{comic.image}}" />
+      </div>
+    </div>
+    <div class="group-button">
+      <button class="btn sec lg" type="button" ng-click="loadMore()" ng-show="showLoad">Cargar mas...</button>
+    </div>
+  </section>
+</main>

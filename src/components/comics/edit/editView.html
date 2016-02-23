@@ -1,0 +1,30 @@
+<main>
+  <section>
+    <div class="container">
+      <div class="detail-container">
+        <form name="editForm" rc-submit="edit()" novalidate="">
+          <div class="login-container">
+            <h1>Editar Comic</h1>
+            <div class="group-input">
+              <label for="name">Nombre:</label>
+              <input type="text" name="name" placeholder="Nombre" class="form-input" id="name" ng-model="comic.name" ng-class="{'has-error': rc.editForm.needsAttention(editForm.name)}" required="">
+            </div>
+            <div class="group-input">
+              <label for="contrasena">Descripcion:</label>
+              <textarea placeholder="Descripcion" name="description" class="form-input" id="description" rows="8" ng-model="comic.description" ng-class="{'has-error': rc.editForm.needsAttention(editForm.description)}" required="">
+              </textarea>
+            </div>
+            <div class="group-input">
+              <label for="image">Cambiar Imagen:</label>
+              <input type="file" class="form-input" id="image" accept="image/*" ng-model="comic.image" image-input>
+            </div>
+            <div class="group-button">
+              <button class="btn sec">Guardar</button>
+              <button class="btn gray" type="button" ng-click="toList()">Cancelar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>

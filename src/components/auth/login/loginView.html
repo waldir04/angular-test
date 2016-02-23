@@ -1,0 +1,25 @@
+<main>
+  <section style="text-center">
+    <div class="container">
+      <div class="detail-container">
+        <form name="loginForm" rc-submit="login()" novalidate="">
+          <div class="login-container">
+            <h1>Inicio de sesion</h1>
+            <div class="group-input">
+              <label for="email">Usuario:</label>
+              <input type="email" name="email" placeholder="E-mail" class="form-input" id="email" ng-model="user.email"  ng-class="{'has-error': rc.loginForm.needsAttention(loginForm.email)}" ng-pattern="/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i" required="">
+            </div>
+            <div class="group-input">
+              <label for="contrasena">Contraseña:</label>
+              <input type="password" name="password" placeholder="Contraseña" class="form-input" id="contrasena" ng-model="user.password" ng-class="{'has-error': rc.loginForm.needsAttention(loginForm.password)}" required="">
+            </div>
+            <div class="group-button">
+              <button class="btn sec">Ingresar</button>
+              <button class="btn gray" type="button" ng-click="toSignup()">Registrarse</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
